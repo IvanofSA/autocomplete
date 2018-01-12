@@ -1,0 +1,17 @@
+extends layout/template
+
+block vars
+	- var pageTemplate = 'index'; //для условий
+	- var pageTitle = 'Самая главная страница -1';
+	- var bodySpecialClass = 'about-page';
+	- var isUser = 'user';
+
+
+block head
+	//script(src="/js/main.bundle.js")
+
+block content
+	.container
+
+		input(type="text" name="text" class="input" placeholder="Можно вводить текст")
+

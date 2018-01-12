@@ -1,0 +1,16 @@
+{
+	"name": "purina-pyaterochka",
+	"version": "0.0.0",
+	"authors": [
+		"Lu"
+	],
+	"main": "gulpfile.js",
+	"license": "MIT",
+	"private": true,
+	"dependencies": {
+		"singularity": "1.6.2"
+	},
+	"devDependencies": {
+		"breakpoint": "~4.6.4"
+	}
+}
