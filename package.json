@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/iNfame/sandbox-es6.git"
+    "url": ""
   },
   "author": "iNfame",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/iNfame/sandbox-es6#readme",
+  "homepage": "",
   "dependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.13.2",
