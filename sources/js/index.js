@@ -1,3 +1,9 @@
+import style from "../css/style.scss";
+
+if(process.env.NODE_ENV === 'development') {
+    console.log('Working in development mode');
+}
+
 import Autocomplete from './modules/autocomplete';
 
 let autocomplete = new Autocomplete({
@@ -21,7 +27,7 @@ let autocomplete = new Autocomplete({
     loader: true,
     timeRequest: 1100,
     customData: {
-        url: 'city2.json',
+        url: '/static/city2.json',
         type: 'GET',
         key: 'name'
     },

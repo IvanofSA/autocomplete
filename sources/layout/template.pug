@@ -1,19 +1,26 @@
 block vars
 
+mixin loadCSS(url)
+	case ENV
+		when 'development'
+			//placeholder for generated css
+		default
+			link(rel="stylesheet", href=url)/
+
 doctype html
 <!--[if IE 8]><html class="ie8"><![endif]-->
 <!--[if gt IE 8]><html><![endif]-->
 html
-	head
+	headv
 		meta(charset='UTF-8')/
 		meta(name='viewport', content='width=device-width')/
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')/
 		meta(name="format-detection" content="telephone=no")/
 		title #{pageTitle}
-
-		link(rel="shortcut icon", href="img/favicon/favicon.ico")
-		link(rel="apple-touch-icon", href="img/favicon/favicon_32x32.ico")
-		link(rel='stylesheet', href='/css/style.css')/
+		+loadCSS("/css/main.css")
+		//link(rel="shortcut icon", href="img/favicon/favicon.ico")
+		//link(rel="apple-touch-icon", href="img/favicon/favicon_32x32.ico")
+		//link(rel='stylesheet', href='/css/style.css')/
 		//script(src='js/vendor.js')
 		block head
 
