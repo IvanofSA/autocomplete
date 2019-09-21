@@ -27,7 +27,7 @@ let autocomplete = new Autocomplete({
     loader: true,
     timeRequest: 1100,
     customData: {
-        url: '/static/city2.json',
+        url: '/test-autocomplete-module/static/city2.json',
         type: 'GET',
         key: 'name'
     },
